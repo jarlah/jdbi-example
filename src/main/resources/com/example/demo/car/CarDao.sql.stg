@@ -1,5 +1,5 @@
 import "../Util.sql.stg"
 
 getCars(test) ::= <<
-    <getCar()> where carid in (<getCarId()>) and carid = :test
+    <getCar()> where carid in (<getCarId()>) and carid = :test <someunknownstuff>
 >>
