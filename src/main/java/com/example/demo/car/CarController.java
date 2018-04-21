@@ -21,6 +21,6 @@ public class CarController {
 
     @GetMapping
     public List<Car> getCars() {
-        return carDao.getCars(1L).toJavaList();
+        return carDao.getCars(1L, ";").toJavaList();
     }
 }
