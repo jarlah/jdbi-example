@@ -1,6 +1,5 @@
 package com.example.demo.config;
 
-import com.example.demo.car.CarDao;
 import org.jdbi.v3.core.Jdbi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -20,7 +19,7 @@ public class ApplicationReady implements ApplicationListener<ApplicationReadyEve
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
         System.out.println("Running hack to avoid race condition");
-        //System.out.println(jdbi.onDemand(CarDao.class).getCars().size());
+        //System.out.println(jdbi.onDemand(CarDao.class).getCars(";").size());
         System.out.println("Hack executed successfully");
     }
 }
