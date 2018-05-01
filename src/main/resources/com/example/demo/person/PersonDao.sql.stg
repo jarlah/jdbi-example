@@ -1,5 +1,0 @@
-import "../Util.sql.stg"
-
-getPersons() ::= <<
-   <getCarId()>
->>

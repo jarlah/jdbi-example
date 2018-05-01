@@ -1,13 +1,14 @@
 package com.example.demo.car;
 
 import io.vavr.collection.List;
+
+import org.jdbi.v3.freemarker.UseFreemarkerSqlLocator;
 import org.jdbi.v3.sqlobject.config.RegisterFieldMapper;
 import org.jdbi.v3.sqlobject.customizer.Bind;
 import org.jdbi.v3.sqlobject.customizer.Define;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
-import org.jdbi.v3.stringtemplate4.UseStringTemplateSqlLocator;
 
-@UseStringTemplateSqlLocator
+@UseFreemarkerSqlLocator
 public interface CarDao {
 
     @SqlQuery

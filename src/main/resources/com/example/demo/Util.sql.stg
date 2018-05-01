@@ -1,7 +1,0 @@
-getCarId() ::= <<
-    select carid from person
->>
-
-getCar() ::= <<
-    select * from car
->>
